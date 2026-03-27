@@ -31,7 +31,7 @@ function checkPageClose2() {
   if (Setting14b === 'false') {
   }
 }
-console.log('CookiePAGE Value: ' + Setting14b + 'SzGames-Scripts Loaded')
+console.log('CookiePAGE Value: ' + Setting14b + 'pizzaGames-Scripts Loaded')
 checkPageClose2()
 
 //CLOAK
@@ -49,8 +49,8 @@ if (tab) {
 }
 
 const settingsDefaultTab = {
-  title: 'Settings - Sz Games',
-  icon: 'https://github.com/sz-games/home/blob/main/G.png?raw=true',
+  title: 'Settings - pizza Games',
+  icon: 'https://github.com/pizza-games/home/blob/main/G.png?raw=true',
 }
 
 const setTitle = (title = '') => {
@@ -81,7 +81,7 @@ const setFavicon = (url) => {
 
   img.onerror = () => {
     // If the URL is not an image, use Google's Favicon API
-    const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain=${url}`
+    const faviconUrl = `https://www.google.com/s2/favicons?pizza=64&domain=${url}`
     faviconLink.href = faviconUrl || settingsDefaultTab.icon
     if (url) {
       tabData.icon = faviconUrl
@@ -144,7 +144,7 @@ function clearPANIC() {
 }
 
 // Security checks
-const blacklistedDomains = ['szgames.net', 'szgames.github.io']
+const blacklistedDomains = ['pizzagames.net', 'pizzagames.github.io']
 
 function checkDomainSecurity() {
   try {
@@ -166,12 +166,12 @@ function checkDomainSecurity() {
 function showSecurityWarning() {
   document.body.innerHTML = ''
   const warning = document.createElement('h1')
-  warning.textContent = 'You Are Accessing Sz Games From A Blacklisted Domain (A Fake Sz Games Site)'
+  warning.textContent = 'You Are Accessing pizza Games From A Blacklisted Domain (A Fake pizza Games Site)'
   document.body.appendChild(warning)
 
   const button = document.createElement('button')
-  button.textContent = 'Go To Sz Games'
-  button.onclick = () => window.open('https://sz-games.github.io', '_blank')
+  button.textContent = 'Go To pizza Games'
+  button.onclick = () => window.open('https://pizzagams.github.io', '_blank')
   document.body.appendChild(button)
 }
 
