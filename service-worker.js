@@ -7,7 +7,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.NetworkFirst()
 );
 
-const cacheName = 'SzGames-1';
+const cacheName = 'pizzaGames-1';
 // List the files to precache
 const precacheResources = [
  '/Offline.html'
@@ -20,7 +20,7 @@ self.addEventListener('install', (event) => {
 
 });
 
-const cacheNamesToDelete = ['Sz-Games', 'SzGames'];
+const cacheNamesToDelete = ['pizza-Games', 'pizzaGames'];
 
 self.addEventListener('activate', (event) => {
   console.log('Service worker activate event!');
